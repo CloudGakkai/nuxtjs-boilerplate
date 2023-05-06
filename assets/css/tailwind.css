@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .card-box-shadow {
+    box-shadow: 0.6rem 0.6rem 0 #222;
+  }
+}
