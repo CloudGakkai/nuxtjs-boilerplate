@@ -1,0 +1,59 @@
+html.dark {
+  .moon-icon img:first-child {
+    display: none;
+  }
+
+  .sun-icon img:last-child {
+    display: none;
+  }
+
+  .moon-icon img:last-child {
+    display: block;
+  }
+
+  .sun-icon img:first-child {
+    display: block;
+  }
+}
+
+html {
+  .moon-icon img:last-child {
+    display: none;
+  }
+
+  .sun-icon img:first-child {
+    display: none;
+  }
+
+  .moon-icon img:first-child {
+    display: block;
+  }
+
+  .sun-icon img:last-child {
+    display: block;
+  }
+}
+
+input:checked~.dot {
+  transform: translateX(100%);
+}
+
+input:checked~.dotS {
+  transform: translateX(118%);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.reverse {
+  transform: rotate(180deg) translateX(-50%);
+}

@@ -1,0 +1,129 @@
+.seller-minimize {
+  display: none;
+}
+
+.logo-minimize {
+  display: none;
+}
+
+.minimize {
+  grid-template-columns: 117px 1fr;
+
+  aside {
+    padding: 34px 14px;
+  }
+
+  .sidemenu-item {
+    width: 62px;
+    height: 62px;
+    display: grid;
+    place-items: center;
+    margin: 0 auto;
+  }
+
+  .seller-minimize,
+  .logo-minimize {
+    display: block;
+  }
+
+  .sidemenu-item .sidemenu-title,
+  .category-list,
+  .seller-maximize,
+  .upgrade-card,
+  .logo-maximize,
+  .child-menu,
+  .caret-icon {
+    display: none;
+  }
+
+  .sidemenu-item.active .child-menu {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 122%;
+    background: var(--gray-100);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--neutral-border);
+    min-width: 150px;
+    color: var(--gray-500);
+  }
+
+  .sidebar-control {
+    max-width: 90px;
+    padding: 15px 11px;
+    gap: 13px;
+  }
+
+  #toggle-theme-btn {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
+}
+
+.dark {
+  .minimize {
+    .sun-icon {
+      display: none;
+    }
+
+    .sidemenu-item.active .child-menu {
+      background: var(--gray-900);
+      border-color: var(--gray-700);
+    }
+  }
+}
+
+html:not(.dark) {
+  .minimize {
+    .moon-icon {
+      display: none;
+    }
+  }
+}
+
+.authentication-sign-in-page {
+  aside {
+    display: none;
+  }
+
+  #layout {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    display: block;
+    order: -10000;
+  }
+
+  .user-noti {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.jobs-listing-1-page,
+.jobs-listing-2-page,
+.add-new-job-page,
+.crm-events-page,
+.crm-customers-page,
+.crm-customer-details-page,
+.crm-dashboard-page,
+.social-feed-2-page,
+.social-feed-3-page {
+  aside {
+    display: none;
+  }
+
+  #layout {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    display: block;
+    order: -10000;
+  }
+}

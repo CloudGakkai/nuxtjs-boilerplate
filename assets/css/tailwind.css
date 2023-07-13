@@ -2,8 +2,113 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --blue-accent: #2775ff;
+    --green-accent: #50d1b2;
+    --violet-accent: #7747ca;
+    --orange-accent: #ec8c56;
+    --yellow-accent: #ece663;
+    --indigo-accent: #5415f1;
+    --emerald-accent: #5eea8d;
+    --fuchsia-accent: #dd50d6;
+    --red-accent: #e23738;
+    --sky-accent: #0bd6f4;
+    --pink-accent: #fb7bb8;
+    --color-brands: #7364db;
+    --neutral-accent: #e8edf2;
+
+    --gray-0: #ffffff;
+    --gray-100: #f5f5fa;
+    --gray-200: #e2e2ea;
+    --gray-300: #c6cbd9;
+    --gray-400: #9a9aaf;
+    --gray-500: #7e7e8f;
+    --gray-600: #656575;
+    --gray-700: #535362;
+    --gray-800: #2e2e3a;
+    --gray-900: #262631;
+    --gray-1000: #16161e;
+    --gray-1100: #07070c;
+    --neutral-bg: #ffffff;
+    --neutral-border: #ffffff;
+
+    --dark-gray-0: #000000;
+    --dark-gray-100: #0f0f12;
+    --dark-gray-200: #1e1e24;
+    --dark-gray-300: #2c2c35;
+    --dark-gray-400: #64646f;
+    --dark-gray-500: #8b8b93;
+    --dark-gray-600: #70707c;
+    --dark-gray-700: #8a8a98;
+    --dark-gray-800: #a9a9b7;
+    --dark-gray-900: #d0d0da;
+    --dark-gray-1000: #eaeaf4;
+    --dark-gray-1100: #f1f1f1;
+    --dark-neutral-bg: #1f2128;
+    --dark-neutral-border: #313442;
+  }
+
+  html.dark {
+  }
+
+  html {
+    /* Color gray */
+
+    /* Color Palette */
+    --green-900: #006d77;
+    --green-500: #83c5be;
+    --green-100: #afeae4;
+    --green-1000: #004b52;
+    --orange-100: #faede3;
+    --orange-500: #ffddd2;
+    --orange-900: #e29578;
+
+    /* Color system */
+    --primary: #508fda;
+    --secondary: #8d99ae;
+    --success: #06d6a0;
+    --danger: #ef476f;
+    --warning: #ffd166;
+    --info: #38a0c2;
+
+    /* Color background */
+    --bg-1: #eae4e9;
+    --bg-2: #fff3ea;
+    --bg-3: #fde2e4;
+    --bg-4: #fad2e1;
+    --bg-5: #dbece5;
+    --bg-6: #bee1e6;
+    --bg-7: #f0efeb;
+    --bg-8: #dfe7fd;
+    --bg-9: #d1ecfd;
+    --bg-10: #ddd3fa;
+
+    /* Animation */
+    --animate-duration: 1s;
+    --animate-delay: 1s;
+    --animate-repeat: 1;
+  }
+  html {
+    font-family: Poppins, system-ui, sans-serif;
+  }
+
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: "";
+  }
+}
+
 @layer utilities {
-  .card-box-shadow {
-    box-shadow: 0.6rem 0.6rem 0 #222;
+  .header-1 {
+    @apply text-header-1 font-bold;
+  }
+  .filter-black {
+    filter: brightness(0%);
+  }
+  .filter-white {
+    filter: brightness(0) invert(1);
   }
 }

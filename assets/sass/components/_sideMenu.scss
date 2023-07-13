@@ -1,0 +1,23 @@
+.sidemenu-item.active {
+  background-color: var(--color-brands);
+  transition: all 0.3s;
+
+  span {
+    color: white;
+  }
+
+  img {
+    filter: brightness(0) invert(1);
+  }
+
+  .child-menu {
+    color: white
+  }
+
+}
+
+@media screen and (max-width: 650.98px) {
+  #sidebar-btn {
+    pointer-events: none;
+  }
+}

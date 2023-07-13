@@ -15,7 +15,5 @@ onBeforeMount(async () => {
 </script>
 
 <template>
-  <div class="bg-slate-100 p-16">
-    <OrganismCharacters :data="data" :loading="fetching" />
-  </div>
+  <div class="bg-slate-100 p-16"></div>
 </template>

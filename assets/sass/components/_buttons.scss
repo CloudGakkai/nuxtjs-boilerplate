@@ -1,0 +1,28 @@
+.list-grid-btn {
+  &.active {
+    background-color: var(--color-brands);
+
+    img {
+      filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(73deg) brightness(103%)
+        contrast(103%);
+    }
+
+    span {
+      color: var(--neutral-bg);
+    }
+  }
+}
+
+.dark {
+  .list-grid-btn {
+    &.active {
+      img {
+        filter: brightness(0) saturate(100%) invert(8%) sepia(8%) saturate(1865%) hue-rotate(189deg) brightness(89%)
+          contrast(87%);
+      }
+      span {
+        color: var(--dark-neutral-bg);
+      }
+    }
+  }
+}

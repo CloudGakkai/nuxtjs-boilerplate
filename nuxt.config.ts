@@ -12,6 +12,7 @@ export default defineNuxtConfig({
       },
     ],
   ],
+  css: ["@/assets/sass/style.scss"],
   typescript: {
     strict: true,
   },
@@ -22,6 +23,12 @@ export default defineNuxtConfig({
       Roboto: {
         wght: [400, 500, 700],
       },
+    },
+  },
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
     },
   },
   runtimeConfig: {

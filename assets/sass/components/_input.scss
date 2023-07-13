@@ -1,0 +1,31 @@
+.checkbox-primary,
+.radio-primary {
+  border-color: var(--gray-300);
+}
+
+.checkbox,
+.radio {
+  &:hover {
+    border-color: var(--gray-300);
+  }
+
+  &:checked {
+    &:hover {
+      border-color: transparent;
+    }
+  }
+}
+
+.select-arrow {
+  background: url('/assets/images/icons/icon-arrow-down.svg') transparent no-repeat calc(100% - 15px) !important;
+  /* Better placement regardless of input width */
+}
+
+.select-caret {
+  background: url('/assets/images/icons/icon-caret-down.svg') transparent no-repeat calc(100% - 15px) !important;
+
+}
+
+.radio-input:checked~.radio-label {
+  color: red;
+}

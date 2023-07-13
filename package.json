@@ -13,11 +13,21 @@
     "@nuxtjs/google-fonts": "^3.0.0",
     "@nuxtjs/tailwindcss": "^6.6.6",
     "@types/node": "^18",
-    "nuxt": "^3.4.2"
+    "autoprefixer": "^10.4.14",
+    "nuxt": "^3.4.2",
+    "postcss": "^8.4.23",
+    "sass": "^1.62.1"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.4.9",
+    "@tailwindcss/line-clamp": "^0.4.4",
     "apisauce": "^3.0.0",
-    "nuxt-proxy": "^0.4.1"
+    "chart.js": "^4.3.0",
+    "daisyui": "^2.51.6",
+    "dayjs": "^1.11.7",
+    "nuxt-proxy": "^0.4.1",
+    "tailwind-scrollbar-hide": "^1.1.7",
+    "vee-validate": "^4.9.4",
+    "yup": "^1.1.1"
   }
 }

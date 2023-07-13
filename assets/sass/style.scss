@@ -1,0 +1,75 @@
+// /***
+//  Theme Name:
+//  Description:
+//  Version: 1.0
+//  License: GNU General Public License v2 or later
+//  License URI: http://www.gnu.org/licenses/gpl-2.0.html
+// ==============================
+// TABLE CONTENT
+//  Import Google Fonts
+//  Include Third Party CSS Library
+//  GENERAL
+//  HEADER
+//  Offcanvas Sidebar
+//  Search form
+//  Main header
+//  Mega menu
+//  Header layouts
+//  Page layouts
+//  Pagination
+//  Breadcrumb
+//  CATEGORY PAGES
+//  SINGLE POST
+//  Author box
+//  comment
+//  Post share social
+//  WP STYPE
+//  Custom amine
+// ***/
+
+// // Configuration and helpers
+// @import
+//   'abstracts/variables',
+//   'abstracts/functions',
+//   'abstracts/mixins';
+
+// // Vendors
+// @import
+//   'vendors/vendors-import';
+
+// // Base stuff
+// @import
+//   'base/common',
+//   'base/animation',
+//   'base/typography';
+
+// Components
+@import 'components/buttons',
+//   'components/form',
+'components/slider',
+'components/input', 'components/toggle', 'components/filters',
+//   'components/noUISlider',
+//   'components/card',
+'components/tabs',
+'components/misc',
+//   'components/banners';
+'components/sideMenu';
+
+//   // Themes
+// @import
+//   'themes/default';
+
+// // Layout-related sections
+@import //   'layout/header',
+//   'layout/navigation',
+//   'layout/sidebar',
+//   'layout/footer',
+'layout/layout';
+
+// // Page-specific styles
+// @import
+//   'pages/homepage1';
+
+//   // Responsive
+// @import
+//   'layout/responsive';
